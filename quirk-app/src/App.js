@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
-import Title from "./components/Title";
+import Intro from "./components/Intro";
 import LoginInfo from "./components/LoginInfo";
 import SignUp from "./components/SignUp";
+import Home from "./components/Home"
 
 import { ApolloProvider } from "react-apollo";
 import ApolloClient from "apollo-boost";
@@ -47,13 +49,10 @@ const client = new ApolloClient({
 
 class App extends Component {
   state = {
-    logged: false,
-    user: "",
-    pass: "",
-    error: "",
+    token: ""
   }
 
-  login = (success) => async (e) => {
+  login = (success, token) => async (e) => {
     e.preventDefault();
 
     console.log(success);
@@ -64,40 +63,44 @@ class App extends Component {
     if(user && pass){
       if(success){
         this.setState({
-          logged: success,
-          user: user,
-          pass: pass,
-          error: ""
+          token: token
         });
       }
       else{
         this.setState({
-          logged: false,
-          user: user,
-          pass: pass,
-          error: "Incorrect Username or Password"
+          token: ""
         });
       }
     }
     else{
       this.setState({
-        logged: false,
-        user: "",
-        pass: "",
-        error: "Incorrect Username or Password"
+        token: ""
       });
     }
   }
 
+  setToken = (newToken) => {
+    this.setState({
+      token: newToken
+    });
+    console.log(this.state.token);
+  }
+  /*
+  <LoginInfo error={this.state.error} login={this.login} user={this.state.user} pass={this.state.pass}/>
+  <SignUp />
+  */
+
   render() {
     return (
       <ApolloProvider client={client}>
-        <div>
-          <Title />
-          <LoginInfo error={this.state.error} login={this.login} user={this.state.user} pass={this.state.pass}/>
-          <SignUp />
-          {console.log(this.state)}
-        </div>
+        <Router>
+          <div>
+            <Route exact path='/' component={Intro}/>
+            <Route path='/login/' component={() => <LoginInfo setToken={this.setToken} token={this.state.token}/>}/>
+            <Route path='/signup/' component={() => <SignUp setToken={this.setToken}/>}/>
+            <Route path='/home/' component={() => <Home setToken={this.setToken} token={this.state.token}/>}/>
+          </div>
+        </Router>
       </ApolloProvider>
     );
   }

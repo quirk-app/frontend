@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Serif');
+@import url('https://fonts.googleapis.com/css?family=Patua+One');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+.box {
+  height: 100%;
+  width: 60%;
+  margin-left: -10%;
+  z-index:-1;
+  position: absolute;
+  transform: skew(10deg);
+  background: #ED9349;
+}
+
+.title {
+  position: absolute;
+  margin-left: 30%;
+  margin-top: 23%;
+  font-family: PT Serif;
+}
+
+.main__text {
+  position: absolute;
+  margin-left: 55%;
+  margin-top: 20%;
+  font-family: Patua One;
+  color: #23170E;
+}
+
+.main__text__below {
+  position: absolute;
+  margin-left: 55%;
+  margin-top: 28%;
+  font-family: Patua One;
+  color: #23170E;
+}
+
+.log__button {
+  position: absolute;
+  margin-left: 55%;
+  margin-top: 23%;
+}
+
+.sign__button {
+  position: absolute;
+  margin-left: 55%;
+  margin-top: 31%;
+}
+
+.btn-outline-quirk {
+  color: #ED9349;
+  background-color: #FFFFFF;
+  border-color: #ED9349;
+}
+
+.signup {
+  width: 24rem;
+  display: inline-block;
+  margin-top: 10%;
+  text-align: left;
+}
+
+.header {
+  height: 10%;
+  width: 100%;
+  position: absolute;
+  background: #ED9349;
+  font-family: PT Serif;
+  text-align: center;
+}
+
+.user {
+  position: absolute;
+  width: 17%;
+  height: 30%;
+  margin-left: 7%;
+  margin-top: 10%;
+  font-family: Patua One;
+  text-align: center;
+}
+
+.trend {
+  position: absolute;
+  width: 22%;
+  height: 50%;
+  margin-left: 73%;
+  margin-top: 10%;
+  font-family: Patua One;
+  text-align: center;
+}
+
+.stat {
+  text-align: left;
+  font-family: Montserrat;
+}
+
+.bt {
+  font-family: Patua One;
+}
+
+html, body, div {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+
+
+
+
+
+.btn-outline-quirk:hover,
+.btn-outline-quirk:focus,
+.btn-outline-quirk:active,
+.btn-outline-quirk.active,
+.open .dropdown-toggle.btn-outline-quirk {
+  color: #FFFFFF;
+  background-color: #ED9349;
+  border-color: #ED9349;
+  text-decoration: none;
+}
+
+.btn-outline-quirk:active,
+.btn-outline-quirk.active,
+.open .dropdown-toggle.btn-outline-quirk {
+  background-image: none;
+  text-decoration: none;
+}
+
+.btn-outline-quirk.disabled,
+.btn-outline-quirk[disabled],
+fieldset[disabled] .btn-outline-quirk,
+.btn-outline-quirk.disabled:hover,
+.btn-outline-quirk[disabled]:hover,
+fieldset[disabled] .btn-outline-quirk:hover,
+.btn-outline-quirk.disabled:focus,
+.btn-outline-quirk[disabled]:focus,
+fieldset[disabled] .btn-outline-quirk:focus,
+.btn-outline-quirk.disabled:active,
+.btn-outline-quirk[disabled]:active,
+fieldset[disabled] .btn-outline-quirk:active,
+.btn-outline-quirk.disabled.active,
+.btn-outline-quirk[disabled].active,
+fieldset[disabled] .btn-outline-quirk.active {
+  background-color: #FFFFFF;
+  border-color: #ED9349;
+  text-decoration: none;
+}
+
+.btn-outline-quirk .badge {
+  color: #FFFFFF;
+  background-color: #ED9349;
+  text-decoration: none;
+}
+
+.btn-quirk {
+  color: #ffffff;
+  background-color: #ED9349;
+  border-color: #ED9349;
+}
+
+.btn-quirk:hover,
+.btn-quirk:focus,
+.btn-quirk:active,
+.btn-quirk.active,
+.open .dropdown-toggle.btn-quirk {
+  color: #ffffff;
+  background-color: #E38E49;
+  border-color: #ED9349;
+}
+
+.btn-quirk:active,
+.btn-quirk.active,
+.open .dropdown-toggle.btn-quirk {
+  background-image: none;
+}
+
+.btn-quirk.disabled,
+.btn-quirk[disabled],
+fieldset[disabled] .btn-quirk,
+.btn-quirk.disabled:hover,
+.btn-quirk[disabled]:hover,
+fieldset[disabled] .btn-quirk:hover,
+.btn-quirk.disabled:focus,
+.btn-quirk[disabled]:focus,
+fieldset[disabled] .btn-quirk:focus,
+.btn-quirk.disabled:active,
+.btn-quirk[disabled]:active,
+fieldset[disabled] .btn-quirk:active,
+.btn-quirk.disabled.active,
+.btn-quirk[disabled].active,
+fieldset[disabled] .btn-quirk.active {
+  background-color: #ED9349;
+  border-color: #ED9349;
+}
+
+.btn-quirk .badge {
+  color: #ED9349;
+  background-color: #ffffff;
+}
