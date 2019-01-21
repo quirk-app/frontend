@@ -6,3 +6,8 @@ Built using React with Bootstrap
 
 ## Images
 
+# Home
+
+<img src="https://github.com/quirk-app/blob/master/frontend/quirk-app/Images/" width="550" height="350">
+
+https://github.com/quirk-app/frontend/edit/master/README.md
