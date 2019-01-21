@@ -8,6 +8,6 @@ Built using React with Bootstrap
 
 # Home
 
-<img src="https://github.com/quirk-app/blob/master/frontend/quirk-app/Images/" width="550" height="350">
+<img src="https://github.com/quirk-app/blob/master/frontend/quirk-app/Home.png" width="550" height="350">
 
 https://github.com/quirk-app/frontend/edit/master/README.md
