@@ -4,10 +4,24 @@ A social media platform where users can anonymously post and view unusual "Quirk
 
 Built using React with Bootstrap
 
-## Images
+# Images
 
-# Home
+## Home
 
-<img src="https://github.com/quirk-app/blob/master/frontend/quirk-app/Home.png" width="550" height="350">
+<img src="https://github.com/quirk-app/frontend/blob/master/quirk-app/Home.png" width="550" height="350">
 
-https://github.com/quirk-app/frontend/edit/master/README.md
+## Login
+
+<img src="https://github.com/quirk-app/frontend/blob/master/quirk-app/Login.png" width="550" height="350">
+
+## Signup
+
+<img src="https://github.com/quirk-app/frontend/blob/master/quirk-app/Signup.png" width="550" height="350">
+
+## Dashboard
+
+<img src="https://github.com/quirk-app/frontend/blob/master/quirk-app/Dashboard.png" width="550" height="350">
+
+## Create Post
+
+<img src="https://github.com/quirk-app/frontend/blob/master/quirk-app/Create.png" width="550" height="350">
